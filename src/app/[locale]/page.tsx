@@ -1,7 +1,11 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import Link from 'next/link';
 
 export default function HomePage() {
     const t = useTranslations('Index');
+    const locale = useLocale();
+    const otherLocale = locale === 'ko' ? 'en' : 'ko';
+    const otherLabel = locale === 'ko' ? 'EN' : '한국어';
 
     return (
         <main className="min-h-screen relative overflow-hidden">
@@ -11,10 +15,15 @@ export default function HomePage() {
                     <div className="flex items-center gap-3">
                         <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-8 w-auto" />
                     </div>
-                    <div className="hidden md:flex gap-8">
-                        <a href="#vision" className="text-gray-400 hover:text-white transition-colors">{t('nav.vision')}</a>
-                        <a href="#products" className="text-gray-400 hover:text-white transition-colors">{t('nav.products')}</a>
-                        <a href="#philosophy" className="text-gray-400 hover:text-white transition-colors">{t('nav.philosophy')}</a>
+                    <div className="flex items-center gap-8">
+                        <div className="hidden md:flex gap-8">
+                            <a href="#vision" className="text-gray-400 hover:text-white transition-colors">{t('nav.vision')}</a>
+                            <a href="#products" className="text-gray-400 hover:text-white transition-colors">{t('nav.products')}</a>
+                            <a href="#philosophy" className="text-gray-400 hover:text-white transition-colors">{t('nav.philosophy')}</a>
+                        </div>
+                        <Link href={`/${otherLocale}`} className="px-3 py-1.5 rounded-md border border-white/20 text-sm text-gray-300 hover:text-white hover:border-white/40 transition-colors">
+                            {otherLabel}
+                        </Link>
                     </div>
                 </div>
             </nav>
