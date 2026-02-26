@@ -38,8 +38,8 @@
             }
         },
         "philosophy_section": {
-            "title": "Built on Openness, Driven by Meritocracy",
-            "main_title": "Built on <hl>Openness</hl>,<br/>Driven by <hl>Meritocracy</hl>",
+            "title": "Built on Openness, Driven by Technical Excellence",
+            "main_title": "Built on <hl>Openness</hl>,<br/>Driven by <hl>Technical Excellence</hl>",
             "p1": {
                 "title": "Upstream First",
                 "desc": "We believe in the power of open-source communities, paving the way by proposing new security and communication standards for the AI agent era."
