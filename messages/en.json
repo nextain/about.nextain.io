@@ -1,0 +1,62 @@
+{
+    "Index": {
+        "title": "Defining the Infrastructure for the AGI Era",
+        "subtitle": "From Chaotic Code to Trusted Autonomy. Nextain builds the sovereign infrastructure for the AGI era, ensuring independent execution environments for autonomous AI agents and verifying the integrity of AI-generated software.",
+        "core_products": "Core Products",
+        "our_philosophy": "Our Philosophy",
+        "nav": {
+            "vision": "Vision",
+            "products": "Products",
+            "philosophy": "Philosophy"
+        },
+        "products_section": {
+            "title": "The Anchor in Fragmentation",
+            "desc": "In an era of endless software variations, Nextain provides the common standard that allows all these creations to coexist securely.",
+            "naia": {
+                "slogan": "Your AI lives here. Your OS, your rules.",
+                "f1": "Your own AI with customizable VRM 3D avatars",
+                "f2": "Freedom of AI choice (Gemini, Claude, GPT, Ollama, etc.)",
+                "f3": "Give your AI a unique voice with various TTS engines",
+                "f4": "The entire OS as a tool: files, terminal, browser, and more",
+                "f5": "Complete local control over memory and personality on your machine",
+                "f6": "70+ built-in skills and OpenClaw community ecosystem",
+                "f7": "Stay connected via Discord DM anywhere, anytime",
+                "f8": "Always-on AI powered by the OpenClaw gateway running 24/7",
+                "f9": "Fully open source (Apache 2.0) for transparent data handling",
+                "f10": "Gaming OS + AI vision built on Bazzite and Steam/Proton"
+            },
+            "jikime": {
+                "slogan": "Agent Technology for Enterprise AX Migration",
+                "f1": "Enterprise AX agents that transform legacy code into modern, AI-collaborative foundations",
+                "f2": "Security-first validation of AI-generated code and real-time runtime protection",
+                "f3": "Providing cloud and on-premise AI agent infrastructure for continuous improvement and secure operation"
+            }
+        },
+        "philosophy_section": {
+            "title": "Built on Openness, Driven by Meritocracy",
+            "p1": {
+                "title": "Upstream First",
+                "desc": "We believe in the power of open-source communities, paving the way by proposing new security and communication standards for the AI agent era."
+            },
+            "p2": {
+                "title": "Data-Driven Transparency",
+                "desc": "All Nextain technical decisions are based on transparent data and logic, providing our partners and customers with a predictable and reliable development environment."
+            },
+            "p3": {
+                "title": "Robust AI Infrastructure",
+                "desc": "We focus on solving the security and system fragmentation challenges enterprises face when adopting AI, building a sustainable infrastructure ecosystem."
+            }
+        },
+        "insight": {
+            "badge": "Insight",
+            "title": "The Era of Vibe Coding: Why speak of 'Infrastructure'?",
+            "desc": "When code is continuously pouring out, the vessel that holds it must be stronger and more precise. As AI generates endless software, we need powerful rules and standards encompassing this fragmented ecosystem. That is why Nextain is building Naia OS and Naia Business ADK.",
+            "author": "- Luke, Founder of Nextain"
+        },
+        "footer": {
+            "desc": "Nextain INC builds the sovereign infrastructure for the AGI era.",
+            "rights": "© 2026 Nextain INC. All rights reserved.",
+            "powered": "Designed by Nextain"
+        }
+    }
+}
