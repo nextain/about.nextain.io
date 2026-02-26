@@ -1,7 +1,11 @@
 {
     "Index": {
         "title": "Defining the Infrastructure for the AGI Era",
-        "subtitle": "From Chaotic Code to Trusted Autonomy. Nextain builds the sovereign infrastructure for the AGI era, ensuring independent execution environments for autonomous AI agents and verifying the integrity of AI-generated software.",
+        "hero": {
+            "badge": "Nextain Blueprint",
+            "title": "Building Secure and<br/> Sovereign <hl>AI Environments</hl>"
+        },
+        "subtitle": "An era where everyone can own their AI. Nextain provides interoperable architecture support to easily and securely deploy 'Your Own AI' and 'Your Organization's AI'.",
         "core_products": "Core Products",
         "our_philosophy": "Our Philosophy",
         "nav": {
@@ -11,6 +15,7 @@
         },
         "products_section": {
             "title": "The Anchor in Fragmentation",
+            "title_hl": "Fragmentation",
             "desc": "In an era of endless software variations, Nextain provides the common standard that allows all these creations to coexist securely.",
             "naia": {
                 "slogan": "Your AI lives here. Your OS, your rules.",
@@ -34,6 +39,7 @@
         },
         "philosophy_section": {
             "title": "Built on Openness, Driven by Meritocracy",
+            "main_title": "Built on <hl>Openness</hl>,<br/>Driven by <hl>Meritocracy</hl>",
             "p1": {
                 "title": "Upstream First",
                 "desc": "We believe in the power of open-source communities, paving the way by proposing new security and communication standards for the AI agent era."
@@ -49,12 +55,12 @@
         },
         "insight": {
             "badge": "Insight",
-            "title": "The Era of Vibe Coding: Why speak of 'Infrastructure'?",
-            "desc": "When code is continuously pouring out, the vessel that holds it must be stronger and more precise. As AI generates endless software, we need powerful rules and standards encompassing this fragmented ecosystem. That is why Nextain is building Naia OS and Naia Business ADK.",
+            "title": "The Era of Vibe Coding: AI for Everyone",
+            "desc": "When code is continuously pouring out, the vessel that holds it must be solid and open. We must be able to securely own 'Our Own AI' and 'Our Organization's AI' with flexible interoperability, free from giant platforms. That is why Nextain is building Naia OS and Naia Business ADK.",
             "author": "- Luke, Founder of Nextain"
         },
         "footer": {
-            "desc": "Nextain INC builds the sovereign infrastructure for the AGI era.",
+            "desc": "Nextain INC is a tech company building open, interoperable AI environments.",
             "rights": "© 2026 Nextain INC. All rights reserved.",
             "powered": "Designed by Nextain"
         }
