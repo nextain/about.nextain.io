@@ -62,7 +62,7 @@ export default function HomePage() {
                         {/* Naia OS */}
                         <div className="glass-card p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
                             <h3 className="text-4xl font-display font-bold mb-4">Naia OS</h3>
-                            <p className="text-[#6366f1] font-semibold text-lg mb-8">{t('products_section.naia.slogan')}</p>
+                            <p className="text-[#60a5fa] font-semibold text-lg mb-8">{t('products_section.naia.slogan')}</p>
                             <ul className="grid grid-cols-1 gap-2.5 text-sm text-gray-400">
                                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
                                     <li key={num} className="flex gap-2 items-start">
@@ -76,7 +76,7 @@ export default function HomePage() {
                         {/* Naia Business ADK */}
                         <div className="glass-card p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
                             <h3 className="text-4xl font-display font-bold mb-4">Naia Business ADK</h3>
-                            <p className="text-[#ec4899] font-semibold text-lg mb-8">{t('products_section.jikime.slogan')}</p>
+                            <p className="text-[#38bdf8] font-semibold text-lg mb-8">{t('products_section.jikime.slogan')}</p>
                             <ul className="space-y-4 text-gray-400">
                                 <li className="flex gap-3"><span className="text-white">→</span> {t('products_section.jikime.f1')}</li>
                                 <li className="flex gap-3"><span className="text-white">→</span> {t('products_section.jikime.f2')}</li>
@@ -88,7 +88,7 @@ export default function HomePage() {
             </section>
 
             {/* Philosophy Section */}
-            <section id="philosophy" className="py-32 bg-gradient-to-b from-transparent via-[#6366f1]/5 to-transparent">
+            <section id="philosophy" className="py-32 bg-gradient-to-b from-transparent via-[#3b82f6]/5 to-transparent">
                 <div className="container mx-auto px-6">
                     <h2 className="text-4xl md:text-6xl font-display font-bold text-center mb-20 leading-tight whitespace-pre-line">
                         {t.rich('philosophy_section.main_title', {
@@ -118,7 +118,7 @@ export default function HomePage() {
                         <p className="text-xl text-gray-400 italic mb-10 leading-relaxed max-w-3xl mx-auto">
                             "{t('insight.desc')}"
                         </p>
-                        <div className="text-[#6366f1] font-semibold">{t('insight.author')}</div>
+                        <div className="text-[#60a5fa] font-semibold">{t('insight.author')}</div>
                     </div>
                 </div>
             </section>
