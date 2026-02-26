@@ -29,10 +29,10 @@ export default function HomePage() {
 
                 <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center">
                     <div className="px-5 py-2 rounded-full border border-white/10 bg-white/5 text-sm font-semibold tracking-wide text-gray-400 uppercase mb-8">
-                        Nextain Infrastructure
+                        {t('hero.badge')}
                     </div>
-                    <h1 className="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight tracking-tight">
-                        Defining the Infrastructure<br />for the <span className="text-gradient">AGI Era</span>
+                    <h1 className="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight tracking-tight whitespace-pre-line">
+                        {t.rich('hero.title', { hl: (chunks) => <span className="text-gradient">{chunks}</span> })}
                     </h1>
                     <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12">
                         {t('subtitle')}
@@ -53,7 +53,7 @@ export default function HomePage() {
                 <div className="container mx-auto px-6">
                     <div className="text-center max-w-3xl mx-auto mb-20">
                         <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-                            <span className="text-gradient">Fragmentation</span>
+                            <span className="text-gradient">{t('products_section.title_hl')}</span>
                         </h2>
                         <p className="text-xl text-gray-400">{t('products_section.desc')}</p>
                     </div>
@@ -90,8 +90,10 @@ export default function HomePage() {
             {/* Philosophy Section */}
             <section id="philosophy" className="py-32 bg-gradient-to-b from-transparent via-[#6366f1]/5 to-transparent">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-4xl md:text-6xl font-display font-bold text-center mb-20 leading-tight">
-                        Built on <span className="text-gradient">Openness</span>,<br />Driven by <span className="text-gradient">Meritocracy</span>
+                    <h2 className="text-4xl md:text-6xl font-display font-bold text-center mb-20 leading-tight whitespace-pre-line">
+                        {t.rich('philosophy_section.main_title', {
+                            hl: (chunks) => <span className="text-gradient">{chunks}</span>
+                        })}
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-10">
