@@ -4,8 +4,25 @@ import Script from 'next/script';
 import '../globals.css';
 
 export const metadata = {
-    title: 'Nextain INC - Defining the Infrastructure for the AGI Era',
-    description: 'Nextain builds the sovereign infrastructure for the AGI era.',
+    title: 'Nextain | Next AI Networks',
+    description: '오픈소스 기반의 상호호환 가능한 AI 환경을 구축하는 기술 연구 기업. 플랫폼에 종속되지 않고, 나만의 AI를 유연하게 소유할 수 있는 세상을 만듭니다.',
+    icons: {
+        icon: '/favicon.ico',
+        apple: '/apple-touch-icon.png',
+    },
+    openGraph: {
+        title: 'Nextain | Next AI Networks',
+        description: '오픈소스 기반의 상호호환 가능한 AI 환경을 구축하는 기술 연구 기업. 플랫폼에 종속되지 않고, 나만의 AI를 유연하게 소유할 수 있는 세상을 만듭니다.',
+        images: [{ url: '/og-image.png', width: 1200, height: 630 }],
+        siteName: 'Nextain',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Nextain | Next AI Networks',
+        description: '오픈소스 기반의 상호호환 가능한 AI 환경을 구축하는 기술 연구 기업. 플랫폼에 종속되지 않고, 나만의 AI를 유연하게 소유할 수 있는 세상을 만듭니다.',
+        images: ['/og-image.png'],
+    },
 };
 
 export default async function LocaleLayout({
