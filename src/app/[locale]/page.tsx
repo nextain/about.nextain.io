@@ -9,8 +9,7 @@ export default function HomePage() {
             <nav className="fixed top-0 w-full z-50 bg-[#0a0a0c]/80 backdrop-blur-md border-b border-white/10 h-20 flex items-center">
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     <div className="flex items-center gap-3">
-                        <img src="/assets/logos/nextain-light-logo.png" alt="Nextain Logo" className="h-8 w-auto" />
-                        <span className="font-display font-bold text-xl tracking-tight">Nextain</span>
+                        <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-8 w-auto" />
                     </div>
                     <div className="hidden md:flex gap-8">
                         <a href="#vision" className="text-gray-400 hover:text-white transition-colors">{t('nav.vision')}</a>
@@ -127,7 +126,7 @@ export default function HomePage() {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-wrap justify-between gap-12 mb-16">
                         <div className="max-w-md">
-                            <img src="/assets/logos/nextain-light-logo.png" alt="Nextain Logo" className="h-12 w-auto mb-6 opacity-80" />
+                            <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-12 w-auto mb-6 opacity-80" />
                             <p className="text-gray-400 leading-relaxed">{t('footer.desc')}</p>
                         </div>
                         <div className="flex gap-20">
