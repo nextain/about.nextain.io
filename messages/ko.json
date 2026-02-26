@@ -11,7 +11,7 @@
         },
         "hero": {
             "badge": "Nextain Blueprint",
-            "title": "안전하고 주권적인\n<hl>AI 환경</hl>을 구축합니다"
+            "title": "안전하고 주권적인 <hl>AI 환경</hl>을 구축합니다"
         },
         "products_section": {
             "title_hl": "파편화 시대의 닻 (The Anchor in Fragmentation)",
@@ -37,7 +37,7 @@
             }
         },
         "philosophy_section": {
-            "main_title": "<hl>개방성</hl>을 토대로,\n<hl>기술적 탁월함</hl>을 지향합니다",
+            "main_title": "<hl>개방성</hl>을 토대로, <hl>기술적 탁월함</hl>을 지향합니다",
             "title": "Built on Openness, Driven by Technical Excellence",
             "p1": {
                 "title": "Upstream First",

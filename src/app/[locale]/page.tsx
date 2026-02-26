@@ -48,9 +48,9 @@ export default function HomePage() {
             </section>
 
             {/* Products Section */}
-            <section id="products" className="py-32 relative">
+            <section id="products" className="py-16 md:py-32 relative">
                 <div className="container mx-auto px-6">
-                    <div className="text-center max-w-3xl mx-auto mb-20">
+                    <div className="text-center max-w-3xl mx-auto mb-12 md:mb-20">
                         <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
                             <span className="text-gradient">{t('products_section.title_hl')}</span>
                         </h2>
@@ -59,7 +59,7 @@ export default function HomePage() {
 
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Naia OS */}
-                        <div className="glass-card p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
+                        <div className="glass-card p-8 md:p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
                             <h3 className="text-4xl font-display font-bold mb-4">Naia OS</h3>
                             <p className="text-[#60a5fa] font-semibold text-lg mb-8">{t('products_section.naia.slogan')}</p>
                             <ul className="grid grid-cols-1 gap-2.5 text-sm text-gray-400">
@@ -73,7 +73,7 @@ export default function HomePage() {
                         </div>
 
                         {/* Naia Business ADK */}
-                        <div className="glass-card p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
+                        <div className="glass-card p-8 md:p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
                             <h3 className="text-4xl font-display font-bold mb-4">Naia Business ADK</h3>
                             <p className="text-[#38bdf8] font-semibold text-lg mb-8">{t('products_section.jikime.slogan')}</p>
                             <ul className="space-y-4 text-gray-400">
@@ -87,17 +87,17 @@ export default function HomePage() {
             </section>
 
             {/* Philosophy Section */}
-            <section id="philosophy" className="py-32 bg-gradient-to-b from-transparent via-[#3b82f6]/5 to-transparent">
+            <section id="philosophy" className="py-16 md:py-32 bg-gradient-to-b from-transparent via-[#3b82f6]/5 to-transparent">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-4xl md:text-6xl font-display font-bold text-center mb-20 leading-tight whitespace-pre-line">
+                    <h2 className="text-3xl md:text-6xl font-display font-bold text-center mb-12 md:mb-20 leading-tight whitespace-pre-line">
                         {t.rich('philosophy_section.main_title', {
                             hl: (chunks) => <span className="text-gradient">{chunks}</span>
                         })}
                     </h2>
 
-                    <div className="grid md:grid-cols-3 gap-10">
+                    <div className="grid md:grid-cols-3 gap-6 md:gap-10">
                         {[1, 2, 3].map((num) => (
-                            <div key={num} className="p-8 rounded-2xl bg-white/5 border border-transparent hover:border-white/10 hover:bg-white/10 transition-colors">
+                            <div key={num} className="p-6 md:p-8 rounded-2xl bg-white/5 border border-transparent hover:border-white/10 hover:bg-white/10 transition-colors">
                                 <h4 className="text-2xl font-bold mb-4">{t(`philosophy_section.p${num}.title` as any)}</h4>
                                 <p className="text-gray-400 leading-relaxed">{t(`philosophy_section.p${num}.desc` as any)}</p>
                             </div>
@@ -107,9 +107,9 @@ export default function HomePage() {
             </section>
 
             {/* Insight & Footer */}
-            <section className="py-32 pb-60">
+            <section className="py-16 md:py-32 pb-32 md:pb-60">
                 <div className="container mx-auto px-6">
-                    <div className="bg-gradient-to-br from-[#1e1e23] to-[#141419] border border-white/10 p-16 rounded-[40px] text-center max-w-4xl mx-auto relative">
+                    <div className="bg-gradient-to-br from-[#1e1e23] to-[#141419] border border-white/10 p-8 md:p-16 rounded-[40px] text-center max-w-4xl mx-auto relative">
                         <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wide">
                             {t('insight.badge')}
                         </span>
@@ -122,9 +122,9 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <footer className="bg-[#050505] border-t border-white/10 pt-20 pb-10">
+            <footer className="bg-[#050505] border-t border-white/10 pt-16 md:pt-20 pb-10">
                 <div className="container mx-auto px-6">
-                    <div className="flex flex-wrap justify-between gap-12 mb-16">
+                    <div className="flex flex-wrap justify-between gap-8 md:gap-12 mb-12 md:mb-16">
                         <div className="max-w-md">
                             <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-12 w-auto mb-6 opacity-80" />
                             <p className="text-gray-400 leading-relaxed">{t('footer.desc')}</p>
