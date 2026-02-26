@@ -19,18 +19,14 @@ export default async function LocaleLayout({
 
     return (
         <html lang={locale}>
-            <body className="antialiased bg-[#0a0a0c] text-white">
-                <NextIntlClientProvider messages={messages}>
-                    {children}
-                </NextIntlClientProvider>
-
+            <head>
                 <Script
-                    strategy="afterInteractive"
+                    strategy="beforeInteractive"
                     src="https://www.googletagmanager.com/gtag/js?id=G-F0D8SJPZ2Q"
                 />
                 <Script
                     id="gtag-init"
-                    strategy="afterInteractive"
+                    strategy="beforeInteractive"
                     dangerouslySetInnerHTML={{
                         __html: `
                             window.dataLayer = window.dataLayer || [];
@@ -40,6 +36,11 @@ export default async function LocaleLayout({
                         `,
                     }}
                 />
+            </head>
+            <body className="antialiased bg-[#0a0a0c] text-white">
+                <NextIntlClientProvider messages={messages}>
+                    {children}
+                </NextIntlClientProvider>
             </body>
         </html>
     );
