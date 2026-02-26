@@ -134,8 +134,15 @@ export default function HomePage() {
                             <div>
                                 <h4 className="font-bold mb-6 text-lg">{t('nav.products')}</h4>
                                 <div className="flex flex-col gap-3 text-gray-400">
-                                    <a href="#" className="hover:text-white transition-colors">Naia OS</a>
+                                    <a href="https://naia.nextain.io" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Naia OS</a>
                                     <a href="#" className="hover:text-white transition-colors">Naia Business ADK</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 className="font-bold mb-6 text-lg">{t('footer.links_title')}</h4>
+                                <div className="flex flex-col gap-3 text-gray-400">
+                                    <a href="https://naia.nextain.io" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.naia_portal')}</a>
+                                    <a href="https://github.com/nextain" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
                                 </div>
                             </div>
                         </div>

@@ -61,7 +61,9 @@
         "footer": {
             "desc": "넥스테인은 개방적이고 상호호환 가능한 AI 환경을 구축하는 기술 연구 기업입니다.",
             "rights": "© 2026 Nextain INC. All rights reserved.",
-            "powered": "Designed by Nextain"
+            "powered": "Designed by Nextain",
+            "links_title": "링크",
+            "naia_portal": "Naia 포털"
         }
     }
 }

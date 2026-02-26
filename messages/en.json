@@ -62,7 +62,9 @@
         "footer": {
             "desc": "Nextain INC is a tech company building open, interoperable AI environments.",
             "rights": "© 2026 Nextain INC. All rights reserved.",
-            "powered": "Designed by Nextain"
+            "powered": "Designed by Nextain",
+            "links_title": "Links",
+            "naia_portal": "Naia Portal"
         }
     }
 }
