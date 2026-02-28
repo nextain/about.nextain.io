@@ -151,6 +151,7 @@ export default function HomePage() {
                                 <div className="flex flex-col gap-3 text-gray-400">
                                     <a href="https://naia.nextain.io" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.naia_portal')}</a>
                                     <a href="https://github.com/nextain" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
+                                    <a href="https://github.com/sponsors/luke-n-alpha" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Sponsor</a>
                                 </div>
                             </div>
                         </div>
