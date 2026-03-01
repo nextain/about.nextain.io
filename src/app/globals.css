@@ -61,3 +61,101 @@ body {
   height: 100%;
   background: linear-gradient(to bottom, rgba(10, 10, 12, 0.1) 0%, rgba(10, 10, 12, 1) 100%);
 }
+
+/* ── Pitch Deck Slides ── */
+.pitch-deck {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 5.5rem 1rem 3rem;
+}
+
+.pitch-slide {
+  width: 100%;
+  max-width: 1280px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 4rem;
+  background: linear-gradient(135deg, #0c0c10 0%, #0a0a0c 50%, #0b0b10 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  /* 콘텐츠 초과 시에도 비율 강제 유지 */
+  min-height: 0;
+  max-height: calc(1280px * 9 / 16);
+}
+
+.pitch-slide-logo {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  height: 1rem;
+  opacity: 0.25;
+}
+
+.pitch-slide-number {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-variant-numeric: tabular-nums;
+}
+
+.pitch-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+/* ── Pitch Deck Print / PDF ── */
+@media print {
+  @page {
+    size: 297mm 210mm;
+    margin: 0;
+  }
+
+  html, body {
+    background: #0a0a0c !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .pitch-deck {
+    gap: 0;
+    padding: 0;
+  }
+
+  .pitch-slide {
+    break-after: page;
+    border: none;
+    border-radius: 0;
+    max-width: none;
+    width: 100vw;
+    height: 100vh;
+    aspect-ratio: auto;
+    max-height: none;
+    padding: 2.5rem 3.5rem;
+    box-shadow: none;
+  }
+
+  .pitch-slide:last-child {
+    break-after: auto;
+  }
+
+  .pitch-slide-logo { bottom: 0.75rem; left: 1.25rem; }
+  .pitch-slide-number { bottom: 0.75rem; right: 1.25rem; }
+}
