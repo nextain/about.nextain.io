@@ -11,7 +11,8 @@
         "nav": {
             "vision": "Vision",
             "products": "Products",
-            "philosophy": "Philosophy"
+            "philosophy": "Philosophy",
+            "team": "Team"
         },
         "products_section": {
             "title": "The Anchor in Fragmentation",
@@ -42,7 +43,7 @@
             "main_title": "Built on <hl>Openness</hl>, Driven by <hl>Technical Excellence</hl>",
             "p1": {
                 "title": "Upstream First",
-                "desc": "We believe in the power of open-source communities, paving the way by proposing new security and communication standards for the AI agent era."
+                "desc": "We contribute to open-source communities first. Through a dual-license model — AI context (.agents/) under CC-BY-SA 4.0 and source code under Apache 2.0 — we propose a new contribution infrastructure that keeps the open source ecosystem sustainable in the vibe coding era."
             },
             "p2": {
                 "title": "Data-Driven Transparency",
@@ -53,10 +54,38 @@
                 "desc": "We focus on solving the security and system fragmentation challenges enterprises face when adopting AI, building a sustainable infrastructure ecosystem."
             }
         },
+        "team_section": {
+            "title": "Our <hl>Team</hl>",
+            "luke": {
+                "name": "Byeongseok Yang (Luke)",
+                "role": "Founder & CEO",
+                "items": {
+                    "i1": "B.S. Computer Science, Soongsil University",
+                    "i2": "Naver (NHN) 7 years — Developer (OCR, Shopping), Product Manager (Naver App, Naver Web, Webtoon, QR Code, Smart TV)",
+                    "i3": "SPRi (SW Policy Research Institute) 3 years — SW Policy Research, VR/AR Trends",
+                    "i4": "25 registered patents",
+                    "i5": "Author: 'The World of Virtual Reality is Coming' (2016)",
+                    "i6": "AI coding tool OSS contributor"
+                }
+            },
+            "donghak": {
+                "name": "Donghak Kim",
+                "role": "CTO",
+                "items": {
+                    "i1": "24 years of full-stack development experience",
+                    "i2": "Core skills: Go, Python, Node.js, React, Docker, MSA",
+                    "i3": "Author: 'Vibe Coding with v0 + Cursor', 'AI Coding'",
+                    "i4": "AI developer community operator",
+                    "i5": "LLM integration workflow optimization & AI agent design expert",
+                    "i6": "Large-scale server operations (100+ servers)"
+                }
+            },
+            "synergy": "Problem solvers who deliver 10x productivity through AI vibe coding, regardless of domain."
+        },
         "insight": {
             "badge": "Insight",
             "title": "The Era of Vibe Coding: AI for Everyone",
-            "desc": "When code is continuously pouring out, the vessel that holds it must be solid and open. We must be able to securely own 'Our Own AI' and 'Our Organization's AI' with flexible interoperability, free from giant platforms. That is why Nextain is building Naia OS and Naia Business ADK.",
+            "desc": "Open source enabled vibe coding, but vibe coding must not destroy the open source ecosystem that made it possible. As AI generates more code, the vessel that holds it must be even more solid and open. Nextain proposes a dual-license model that protects AI context (.agents/) as intellectual property while keeping it open source. An architecture where AI agents themselves attribute sources, suggest voluntary donations, and sustain the open source ecosystem — this is our vision for a sustainable AI era.",
             "author": "- Luke, Founder of Nextain"
         },
         "footer": {

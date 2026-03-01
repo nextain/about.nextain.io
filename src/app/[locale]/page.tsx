@@ -20,6 +20,7 @@ export default function HomePage() {
                             <a href="#vision" className="text-gray-400 hover:text-white transition-colors">{t('nav.vision')}</a>
                             <a href="#products" className="text-gray-400 hover:text-white transition-colors">{t('nav.products')}</a>
                             <a href="#philosophy" className="text-gray-400 hover:text-white transition-colors">{t('nav.philosophy')}</a>
+                            <a href="#team" className="text-gray-400 hover:text-white transition-colors">{t('nav.team')}</a>
                         </div>
                         <Link href={`/${otherLocale}`} className="px-3 py-1.5 rounded-md border border-white/20 text-sm text-gray-300 hover:text-white hover:border-white/40 transition-colors">
                             {otherLabel}
@@ -112,6 +113,51 @@ export default function HomePage() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* Team Section */}
+            <section id="team" className="py-16 md:py-32">
+                <div className="container mx-auto px-6">
+                    <h2 className="text-3xl md:text-5xl font-display font-bold text-center mb-12 md:mb-20">
+                        {t.rich('team_section.title', {
+                            hl: (chunks) => <span className="text-gradient">{chunks}</span>
+                        })}
+                    </h2>
+
+                    <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+                        {/* Luke - Founder & CEO */}
+                        <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-transparent hover:border-white/10 hover:bg-white/10 transition-colors">
+                            <h3 className="text-2xl font-bold mb-1">{t('team_section.luke.name')}</h3>
+                            <p className="text-[#60a5fa] font-semibold mb-6">{t('team_section.luke.role')}</p>
+                            <ul className="space-y-2 text-sm text-gray-400">
+                                {[1, 2, 3, 4, 5, 6].map((num) => (
+                                    <li key={num} className="flex gap-2 items-start">
+                                        <span className="text-white mt-0.5">→</span>
+                                        <span>{t(`team_section.luke.items.i${num}` as any)}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Donghak Kim - CTO */}
+                        <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-transparent hover:border-white/10 hover:bg-white/10 transition-colors">
+                            <h3 className="text-2xl font-bold mb-1">{t('team_section.donghak.name')}</h3>
+                            <p className="text-[#60a5fa] font-semibold mb-6">{t('team_section.donghak.role')}</p>
+                            <ul className="space-y-2 text-sm text-gray-400">
+                                {[1, 2, 3, 4, 5, 6].map((num) => (
+                                    <li key={num} className="flex gap-2 items-start">
+                                        <span className="text-white mt-0.5">→</span>
+                                        <span>{t(`team_section.donghak.items.i${num}` as any)}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p className="text-center text-gray-400 mt-10 md:mt-14 max-w-3xl mx-auto text-lg">
+                        {t('team_section.synergy')}
+                    </p>
                 </div>
             </section>
 
