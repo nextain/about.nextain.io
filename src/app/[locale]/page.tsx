@@ -69,7 +69,7 @@ export default function HomePage() {
 
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Naia OS */}
-                        <a href="https://naia.nextain.io" target="_blank" rel="noreferrer" className="glass-card p-8 md:p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300 block">
+                        <a href={`https://naia.nextain.io/${locale}`} target="_blank" rel="noreferrer" className="glass-card p-8 md:p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300 block">
                             <h3 className="text-4xl font-display font-bold mb-4">Naia OS</h3>
                             <p className="text-[#60a5fa] font-semibold text-lg mb-8">{t('products_section.naia.slogan')}</p>
                             <ul className="grid grid-cols-1 gap-2.5 text-sm text-gray-400">
@@ -188,14 +188,14 @@ export default function HomePage() {
                             <div>
                                 <h4 className="font-bold mb-6 text-lg">{t('nav.products')}</h4>
                                 <div className="flex flex-col gap-3 text-gray-400">
-                                    <a href="https://naia.nextain.io" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Naia OS</a>
+                                    <a href={`https://naia.nextain.io/${locale}`} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Naia OS</a>
                                     <a href="#" className="hover:text-white transition-colors">Naia Business ADK</a>
                                 </div>
                             </div>
                             <div>
                                 <h4 className="font-bold mb-6 text-lg">{t('footer.links_title')}</h4>
                                 <div className="flex flex-col gap-3 text-gray-400">
-                                    <a href="https://naia.nextain.io" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.naia_portal')}</a>
+                                    <a href={`https://naia.nextain.io/${locale}`} target="_blank" rel="noreferrer" className="hover:text-white transition-colors">{t('footer.naia_portal')}</a>
                                     <a href="https://github.com/nextain" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
                                     <a href="https://github.com/sponsors/luke-n-alpha" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">Sponsor</a>
                                 </div>
