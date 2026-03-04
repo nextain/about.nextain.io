@@ -336,7 +336,7 @@ export default function PitchDeckPage() {
                         <div>
                             <h3 className="text-lg font-bold mb-4 text-[#60a5fa]">{t('bizmodel.b2c_title')}</h3>
                             <div className="space-y-3">
-                                {(['free', 'starter', 'pro', 'enterprise'] as const).map((plan) => (
+                                {(['free', 'basic', 'enterprise'] as const).map((plan) => (
                                     <div key={plan} className="flex items-center gap-3 p-3 rounded-xl bg-white/5">
                                         <div className="w-20">
                                             <div className="text-sm font-bold">{t(`bizmodel.${plan}_name` as any)}</div>
