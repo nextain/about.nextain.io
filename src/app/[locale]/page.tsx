@@ -69,7 +69,7 @@ export default function HomePage() {
 
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Naia OS */}
-                        <div className="glass-card p-8 md:p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
+                        <a href="https://naia.nextain.io" target="_blank" rel="noreferrer" className="glass-card p-8 md:p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300 block">
                             <h3 className="text-4xl font-display font-bold mb-4">Naia OS</h3>
                             <p className="text-[#60a5fa] font-semibold text-lg mb-8">{t('products_section.naia.slogan')}</p>
                             <ul className="grid grid-cols-1 gap-2.5 text-sm text-gray-400">
@@ -80,7 +80,7 @@ export default function HomePage() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </a>
 
                         {/* Naia Business ADK */}
                         <div className="glass-card p-8 md:p-12 rounded-3xl relative group hover:-translate-y-2 transition-transform duration-300">
