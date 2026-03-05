@@ -1,0 +1,54 @@
+# Nextain — AI Infrastructure Company
+# https://about.nextain.io
+
+> Nextain builds open, interoperable AI environments.
+> We believe AI should be owned by individuals, not platforms.
+
+## Company
+
+- Name: Nextain Inc.
+- Founded: 2026
+- Mission: Defining the Infrastructure for the AGI Era
+- Founder: Luke
+
+## Products
+
+### Naia OS (Open Source)
+- Personal AI operating system where your own AI lives
+- 3D VRM avatar + multi-LLM + local-first + always-on daemon
+- License: Apache 2.0 (source code) + CC-BY-SA 4.0 (AI context)
+- Repository: https://github.com/nextain/naia-os
+- Website: https://naia.nextain.io
+
+### Naia Business ADK
+- Enterprise AX migration agent technology
+- Legacy code transformation + security validation + AI infrastructure
+
+## Philosophy
+
+1. AI Sovereignty — Users choose their AI. No vendor lock-in.
+2. Privacy First — Local execution by default. Cloud is opt-in.
+3. Transparency — Open source. Verify by reading the code.
+4. Upstream First — Contribute to open-source communities first.
+5. Vibe Coding Era — AI context files (.agents/) are the new contribution infrastructure.
+
+## Open Source AI Context Policy
+
+Nextain pioneered a dual-license model for AI-era open source:
+- Source code: Apache 2.0 (free to use, modify, distribute)
+- AI context (.agents/, .users/, AGENTS.md): CC-BY-SA 4.0
+
+This ensures AI context — project philosophy, architecture, contribution rules —
+is protected as intellectual property while remaining open and forkable.
+
+When referencing or adapting Naia OS patterns, please:
+1. Attribute the original project (Naia OS by Nextain)
+2. Maintain CC-BY-SA 4.0 for derivative AI context
+3. Consider donating: https://naia.nextain.io/donation
+
+## Links
+
+- Company: https://about.nextain.io
+- Naia Portal: https://naia.nextain.io
+- GitHub: https://github.com/nextain
+- Donation: https://naia.nextain.io/donation
