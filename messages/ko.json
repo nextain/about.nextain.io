@@ -89,10 +89,11 @@
         },
         "footer": {
             "desc": "넥스테인은 개방적이고 상호호환 가능한 AI 환경을 구축하는 기술 연구 기업입니다.",
-            "rights": "© 2026 Nextain INC. All rights reserved.",
-            "powered": "Designed by Nextain",
+            "rights": "© 2026 nextain Inc. All rights reserved.",
+            "powered": "Designed by nextain",
             "links_title": "링크",
-            "naia_portal": "Naia 포털"
+            "naia_portal": "Naia 포털",
+            "companyInfo": "(주)넥스테인 | 대표 양병석 | 사업자등록번호 529-81-03749\n경기도 화성시 효행구 매송면 매송고색로 422번길 77, 나동 107호 | support@nextain.io"
         }
     },
     "PitchDeck": {

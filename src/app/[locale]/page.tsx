@@ -240,6 +240,9 @@ export default function HomePage() {
                         <p>{t('footer.rights')}</p>
                         <p className="font-display font-semibold text-gray-400">{t('footer.powered')}</p>
                     </div>
+                    <p className="mt-4 text-center text-xs text-gray-500 whitespace-pre-line">
+                        {t('footer.companyInfo')}
+                    </p>
                 </div>
             </footer>
         </main>
