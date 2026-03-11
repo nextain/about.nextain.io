@@ -37,6 +37,11 @@ export default async function LocaleLayout({
     return (
         <html lang={locale}>
             <head>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})()`,
+                    }}
+                />
                 <Script
                     strategy="beforeInteractive"
                     src="https://www.googletagmanager.com/gtag/js?id=G-F0D8SJPZ2Q"

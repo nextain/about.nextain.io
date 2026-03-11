@@ -20,6 +20,7 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-main);
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .text-gradient {
@@ -34,6 +35,7 @@ body {
   border: 1px solid var(--border);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .hero-bg {
@@ -61,6 +63,184 @@ body {
   height: 100%;
   background: linear-gradient(to bottom, rgba(10, 10, 12, 0.1) 0%, rgba(10, 10, 12, 1) 100%);
 }
+
+/* ── Theme toggle button ── */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  line-height: 1;
+}
+.theme-toggle:hover {
+  background: rgba(128, 128, 128, 0.15);
+}
+
+/* ── Light Theme ── */
+[data-theme="light"] {
+  --bg-dark: #ffffff;
+  --bg-card: rgba(0, 0, 0, 0.03);
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --primary: #2563eb;
+  --secondary: #0891b2;
+  --accent: #3b82f6;
+  --border: rgba(0, 0, 0, 0.08);
+  color-scheme: light;
+}
+
+/* ── Light: Body (override Tailwind utility classes) ── */
+[data-theme="light"] body {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+
+/* ── Light: Navigation ── */
+[data-theme="light"] nav.fixed {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-bottom-color: rgba(0, 0, 0, 0.06) !important;
+}
+[data-theme="light"] nav .text-gray-400,
+[data-theme="light"] nav .text-gray-300 {
+  color: #475569 !important;
+}
+[data-theme="light"] nav .text-gray-400:hover,
+[data-theme="light"] nav .text-gray-300:hover,
+[data-theme="light"] nav .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+[data-theme="light"] nav .border-white\/20 {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+[data-theme="light"] nav .hover\:border-white\/40:hover {
+  border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* ── Light: Hero section ── */
+[data-theme="light"] #vision .absolute.inset-0 .bg-gradient-to-b,
+[data-theme="light"] #vision [class*="from-\[#0a0a0c\]"] {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 1) 100%) !important;
+}
+[data-theme="light"] #vision img {
+  opacity: 0.1 !important;
+}
+[data-theme="light"] .text-gray-400 {
+  color: #64748b !important;
+}
+[data-theme="light"] .text-gray-300 {
+  color: #475569 !important;
+}
+[data-theme="light"] .text-gray-500 {
+  color: #64748b !important;
+}
+[data-theme="light"] .text-gray-600 {
+  color: #475569 !important;
+}
+[data-theme="light"] .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ── Light: Hero badge & buttons ── */
+[data-theme="light"] .bg-white\/5 {
+  background: rgba(0, 0, 0, 0.04) !important;
+}
+[data-theme="light"] .bg-white\/10 {
+  background: rgba(0, 0, 0, 0.06) !important;
+}
+[data-theme="light"] .hover\:bg-white\/10:hover {
+  background: rgba(0, 0, 0, 0.08) !important;
+}
+[data-theme="light"] .bg-white.text-black {
+  background: #1e293b !important;
+  color: #ffffff !important;
+}
+[data-theme="light"] .border-white\/10.bg-white\/5 {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ── Light: Headings ── */
+[data-theme="light"] h1, [data-theme="light"] h2,
+[data-theme="light"] h3, [data-theme="light"] h4 {
+  color: #0f172a !important;
+}
+
+/* ── Light: Product cards ── */
+[data-theme="light"] .glass-card {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+[data-theme="light"] .glass-card:hover {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Light: List arrows ── */
+[data-theme="light"] li .text-white {
+  color: #2563eb !important;
+}
+
+/* ── Light: Philosophy cards ── */
+[data-theme="light"] .hover\:border-white\/10:hover {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+[data-theme="light"] .hover\:bg-white\/10:hover {
+  background: rgba(0, 0, 0, 0.04) !important;
+}
+[data-theme="light"] #philosophy {
+  background-image: linear-gradient(to bottom, transparent, rgba(37, 99, 235, 0.04), transparent) !important;
+}
+
+/* ── Light: Accent colors ── */
+[data-theme="light"] .text-\[#60a5fa\] {
+  color: #2563eb !important;
+}
+[data-theme="light"] .text-\[#38bdf8\] {
+  color: #0284c7 !important;
+}
+
+/* ── Light: Insight card ── */
+[data-theme="light"] .bg-gradient-to-br.from-\[\#1e1e23\] {
+  background: linear-gradient(to bottom right, #eff6ff, #e0f2fe) !important;
+  border-color: rgba(37, 99, 235, 0.15) !important;
+}
+[data-theme="light"] .bg-gradient-to-br.from-\[\#1e1e23\] .bg-white.text-black {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+/* ── Light: Footer ── */
+[data-theme="light"] footer {
+  background: #f1f5f9 !important;
+  border-color: rgba(0, 0, 0, 0.06) !important;
+}
+[data-theme="light"] footer .text-gray-400 {
+  color: #475569 !important;
+}
+[data-theme="light"] footer .text-gray-400:hover,
+[data-theme="light"] footer .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+[data-theme="light"] footer .text-gray-500 {
+  color: #64748b !important;
+}
+[data-theme="light"] footer .font-bold,
+[data-theme="light"] footer h4 {
+  color: #0f172a !important;
+}
+
+/* ── Light: Logo swap ── */
+[data-theme="light"] .logo-dark { display: none !important; }
+[data-theme="light"] .logo-light { display: block !important; }
+[data-theme="dark"] .logo-dark, :root:not([data-theme="light"]) .logo-dark { display: block; }
+[data-theme="dark"] .logo-light, :root:not([data-theme="light"]) .logo-light { display: none; }
 
 /* ── Pitch Deck Slides ── */
 .pitch-deck {
@@ -117,17 +297,17 @@ body {
 }
 
 /* ── Pitch Deck Print / PDF ── */
+
+/* Dark print (original) — add ?print=dark query param or class */
+.print-dark .pitch-slide {
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
 @media print {
   @page {
     size: 297mm 210mm;
     margin: 0;
-  }
-
-  html, body {
-    background: #0a0a0c !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    color-adjust: exact !important;
   }
 
   .no-print {
@@ -158,4 +338,163 @@ body {
 
   .pitch-slide-logo { bottom: 0.75rem; left: 1.25rem; }
   .pitch-slide-number { bottom: 0.75rem; right: 1.25rem; }
+
+  /* ── Light print (default — saves ink) ── */
+  html:not(.print-dark), html:not(.print-dark) body {
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+  }
+
+  html:not(.print-dark) .pitch-slide {
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  /* Headings */
+  html:not(.print-dark) .pitch-slide h1,
+  html:not(.print-dark) .pitch-slide h2,
+  html:not(.print-dark) .pitch-slide h3,
+  html:not(.print-dark) .pitch-slide h4 {
+    color: #1a1a1a !important;
+  }
+
+  /* Gradient text → solid dark blue */
+  html:not(.print-dark) .text-gradient {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #2563eb !important;
+    background-clip: unset !important;
+    color: #2563eb !important;
+  }
+
+  /* Muted text */
+  html:not(.print-dark) .pitch-slide .text-gray-400,
+  html:not(.print-dark) .pitch-slide .text-gray-500,
+  html:not(.print-dark) .pitch-slide .text-gray-600,
+  html:not(.print-dark) .pitch-slide .text-gray-300,
+  html:not(.print-dark) .pitch-slide .text-gray-200 {
+    color: #4a4a4a !important;
+  }
+
+  /* White text → dark */
+  html:not(.print-dark) .pitch-slide .text-white {
+    color: #1a1a1a !important;
+  }
+
+  /* Blue accent text */
+  html:not(.print-dark) .pitch-slide .text-\[#60a5fa\] {
+    color: #2563eb !important;
+  }
+  html:not(.print-dark) .pitch-slide .text-\[#38bdf8\] {
+    color: #0284c7 !important;
+  }
+  html:not(.print-dark) .pitch-slide .text-emerald-400 {
+    color: #059669 !important;
+  }
+
+  /* Cards: transparent bg → light border */
+  html:not(.print-dark) .pitch-slide .bg-white\/5,
+  html:not(.print-dark) .pitch-slide .bg-white\/10,
+  html:not(.print-dark) .pitch-slide [class*="bg-gradient-to"] {
+    background: #f8f9fa !important;
+    border: 1px solid #d0d0d0 !important;
+  }
+
+  /* Colored card borders — keep subtle tint */
+  html:not(.print-dark) .pitch-slide .border-\[#3b82f6\]\/20 {
+    border-color: #93c5fd !important;
+  }
+  html:not(.print-dark) .pitch-slide .border-\[#06b6d4\]\/20 {
+    border-color: #67e8f9 !important;
+  }
+  html:not(.print-dark) .pitch-slide .border-\[#8b5cf6\]\/20 {
+    border-color: #c4b5fd !important;
+  }
+
+  /* Table */
+  html:not(.print-dark) .pitch-slide table {
+    border: 1px solid #d0d0d0 !important;
+  }
+  html:not(.print-dark) .pitch-slide thead tr {
+    background: #f0f0f0 !important;
+  }
+  html:not(.print-dark) .pitch-slide th {
+    color: #1a1a1a !important;
+    border-bottom: 2px solid #d0d0d0 !important;
+  }
+  html:not(.print-dark) .pitch-slide th.text-\[#60a5fa\] {
+    color: #2563eb !important;
+  }
+  html:not(.print-dark) .pitch-slide td {
+    border-top: 1px solid #e5e5e5 !important;
+  }
+  html:not(.print-dark) .pitch-slide td.text-gray-500 {
+    color: #6b6b6b !important;
+  }
+  html:not(.print-dark) .pitch-slide td.text-\[#60a5fa\] {
+    color: #2563eb !important;
+  }
+
+  /* Background images → hide for ink saving */
+  html:not(.print-dark) .pitch-slide .absolute.inset-0 {
+    display: none !important;
+  }
+
+  /* Logo in slide footer → dark version */
+  html:not(.print-dark) .pitch-slide-logo {
+    filter: invert(1) !important;
+    opacity: 0.4 !important;
+  }
+
+  /* Slide number */
+  html:not(.print-dark) .pitch-slide-number {
+    color: #999 !important;
+  }
+
+  /* Pitch label */
+  html:not(.print-dark) .pitch-label {
+    color: #2563eb !important;
+  }
+
+  /* Roadmap status badges */
+  html:not(.print-dark) .pitch-slide [class*="bg-emerald-500\/20"] {
+    background: #d1fae5 !important;
+    color: #059669 !important;
+    border-color: #6ee7b7 !important;
+  }
+  html:not(.print-dark) .pitch-slide [class*="bg-blue-500\/20"] {
+    background: #dbeafe !important;
+    color: #2563eb !important;
+    border-color: #93c5fd !important;
+  }
+  html:not(.print-dark) .pitch-slide [class*="bg-amber-500\/20"] {
+    background: #fef3c7 !important;
+    color: #d97706 !important;
+    border-color: #fcd34d !important;
+  }
+  html:not(.print-dark) .pitch-slide [class*="bg-purple-500\/20"] {
+    background: #ede9fe !important;
+    color: #7c3aed !important;
+    border-color: #c4b5fd !important;
+  }
+
+  /* Image borders */
+  html:not(.print-dark) .pitch-slide img {
+    border-color: #d0d0d0 !important;
+  }
+
+  /* Arrow markers */
+  html:not(.print-dark) .pitch-slide .text-\[#60a5fa\].mt-0\.5,
+  html:not(.print-dark) .pitch-slide span.text-\[#60a5fa\] {
+    color: #2563eb !important;
+  }
+
+  /* ── Dark print mode (opt-in) ── */
+  html.print-dark, html.print-dark body {
+    background: #0a0a0c !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
 }

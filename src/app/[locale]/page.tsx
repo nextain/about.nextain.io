@@ -1,5 +1,36 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
+
+function ThemeToggle() {
+    const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        const saved = localStorage.getItem('theme') as 'dark' | 'light' | null;
+        const initial = saved || 'dark';
+        setTheme(initial);
+        document.documentElement.setAttribute('data-theme', initial);
+    }, []);
+
+    const toggle = () => {
+        const next = theme === 'dark' ? 'light' : 'dark';
+        setTheme(next);
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+    };
+
+    if (!mounted) return <div className="theme-toggle" />;
+
+    return (
+        <button onClick={toggle} className="theme-toggle" aria-label="Toggle theme">
+            {theme === 'dark' ? '\u2600\uFE0F' : '\u{1F319}'}
+        </button>
+    );
+}
 
 export default function HomePage() {
     const t = useTranslations('Index');
@@ -13,7 +44,8 @@ export default function HomePage() {
             <nav className="fixed top-0 w-full z-50 bg-[#0a0a0c]/80 backdrop-blur-md border-b border-white/10 h-20 flex items-center">
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     <div className="flex items-center gap-3">
-                        <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-8 w-auto" />
+                        <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-8 w-auto logo-dark" />
+                        <img src="/assets/logos/nextain-light-logo.png" alt="Nextain Logo" className="h-8 w-auto logo-light" />
                     </div>
                     <div className="flex items-center gap-8">
                         <div className="hidden md:flex gap-8">
@@ -22,6 +54,7 @@ export default function HomePage() {
                             <a href="#philosophy" className="text-gray-400 hover:text-white transition-colors">{t('nav.philosophy')}</a>
                             <a href="#team" className="text-gray-400 hover:text-white transition-colors">{t('nav.team')}</a>
                         </div>
+                        <ThemeToggle />
                         <Link href={`/${otherLocale}`} className="px-3 py-1.5 rounded-md border border-white/20 text-sm text-gray-300 hover:text-white hover:border-white/40 transition-colors">
                             {otherLabel}
                         </Link>
@@ -181,7 +214,8 @@ export default function HomePage() {
                 <div className="container mx-auto px-6">
                     <div className="flex flex-wrap justify-between gap-8 md:gap-12 mb-12 md:mb-16">
                         <div className="max-w-md">
-                            <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-12 w-auto mb-6 opacity-80" />
+                            <img src="/assets/logos/nextain-dark-logo.png" alt="Nextain Logo" className="h-12 w-auto mb-6 opacity-80 logo-dark" />
+                            <img src="/assets/logos/nextain-light-logo.png" alt="Nextain Logo" className="h-12 w-auto mb-6 opacity-80 logo-light" />
                             <p className="text-gray-400 leading-relaxed">{t('footer.desc')}</p>
                         </div>
                         <div className="flex gap-20">

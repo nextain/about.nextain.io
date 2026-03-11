@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 
@@ -42,6 +43,16 @@ export default function PitchDeckPage() {
     const otherLocale = locale === 'ko' ? 'en' : 'ko';
     const otherLabel = locale === 'ko' ? 'EN' : '한국어';
     const imgDir = locale === 'ko' ? '/assets/pitch-deck' : '/assets/pitch-deck-en';
+    const [darkPrint, setDarkPrint] = useState(false);
+
+    const handlePrint = () => {
+        if (darkPrint) {
+            document.documentElement.classList.add('print-dark');
+        } else {
+            document.documentElement.classList.remove('print-dark');
+        }
+        setTimeout(() => window.print(), 100);
+    };
 
     return (
         <main className="min-h-screen bg-[#0a0a0c] text-white">
@@ -61,8 +72,17 @@ export default function PitchDeckPage() {
                         </span>
                     </div>
                     <div className="flex items-center gap-4">
+                        <label className="flex items-center gap-2 text-xs text-gray-400 cursor-pointer select-none">
+                            <input
+                                type="checkbox"
+                                checked={darkPrint}
+                                onChange={(e) => setDarkPrint(e.target.checked)}
+                                className="rounded"
+                            />
+                            {t('nav.darkPrint')}
+                        </label>
                         <button
-                            onClick={() => window.print()}
+                            onClick={handlePrint}
                             className="px-4 py-1.5 rounded-md bg-white/10 text-sm text-gray-300 hover:text-white hover:bg-white/20 transition-colors"
                         >
                             {t('nav.print')}
